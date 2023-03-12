@@ -14,7 +14,7 @@
   }
   
   body {
-      background-color: rgba(255, 255, 255, 0.992);
+      background-color: rgba(248, 242, 133, 0.992);
       overflow-x: hidden;
   }
   
@@ -49,7 +49,7 @@
   .content i {
       font-size: 1.25rem;
     transform: rotate(0deg);
-    transition: 0.7s transform, 0.5s color;
+    transition: 0.1s transform, 0.3s color;
   }
   
   /* Radio styling */
@@ -89,7 +89,7 @@
   /* Hover */
   
   .box:hover {
-    color: rgb(63, 195, 247);
+    color: rgb(0, 177, 246);
   }
   
   .box:hover .line .content i {
