@@ -1,0 +1,234 @@
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Mobile 320x568*/
+  
+  h1 {
+    margin: 0.62rem 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  body {
+      background-color: rgba(248, 242, 133, 0.992);
+      overflow-x: hidden;
+  }
+  
+  main {
+    width: 100%;
+    margin: 1.25rem auto;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 1.25rem auto;
+  }
+  
+  .box {
+      color: rgb(30, 27, 244);
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .container .line {
+    cursor: pointer;
+    padding: 15px 0;
+    height: 100%;
+    transition: 0.5s ease-in height;
+  }
+  
+  .content i {
+      font-size: 1.25rem;
+    transform: rotate(0deg);
+    transition: 0.1s transform, 0.3s color;
+  }
+  
+  /* Radio styling */
+  
+  .input_mem {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .label_mem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+  
+  .label_mem .mem {
+    width: 8rem;
+    height: 0px;
+    border-radius: 0.65rem;
+    margin-top: 0.65rem;
+    transition: 0.5s ease height;
+  }
+  
+  .input_mem:checked + .label_mem .mem {
+    height: 9rem;
+  }
+  
+  .input_mem:checked + .label_mem .content i {
+    transform: rotate(135deg);
+  }
+  
+  /* Hover */
+  
+  .box:hover {
+    color: rgb(0, 177, 246);
+  }
+  
+  .box:hover .line .content i {
+    font-size: 1.25rem
+  }
+  
+  .line:hover .label_mem .mem {
+    height: 9rem;
+  }
+  .line:hover .label_mem .content i {
+    transform: rotate(135deg);
+  }
+  .line:active .label_mem .content i {
+    transform: scale(1.5);
+    color: red;
+  }
+  
+  /* Tablet 820x1180 */
+  @media only screen and (min-width: 820px) {
+    main {
+      width: 51.25rem;
+      margin: 1.25rem auto;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+    }
+  
+    h6 {
+      font-size: 2rem;
+    }
+  
+    .label_mem .mem {
+      width: 16rem;
+      height: 0px;
+      margin-top: 1rem;
+    }
+  
+    .input_mem:checked + .label_mem .mem {
+      height: 17rem;
+    }
+  
+    .line .content i {
+      display: none;
+    }
+  
+    .box:hover .line .content i {
+      display: block;
+      font-size: 1.5rem;
+    }
+  
+    .line:hover .label_mem .mem {
+      height: 17rem;
+    }
+    .line:active .label_mem .content i {
+      display: block;
+      transform: scale(1.3);
+    }
+  }
+  /* Desktop 1540 */
+  
+  @media only screen and (min-width: 1540px) {
+      main {
+          width: 96rem;
+          height: 100vh;
+          margin: 1.25rem auto;
+      }
+  
+      h1 {
+          font-size: 3.5rem;
+          letter-spacing: 3px;
+      }
+  
+      h6 {
+          font-size: 2.5rem;
+      }
+  
+      .label_mem .mem {
+          width: 28rem;
+          height: 0px;
+          margin-top: 10px;
+      }
+  
+      .input_mem:checked + .label_mem .mem {
+          height: 30rem;
+      }
+  
+      .box:hover .line .content i {
+          font-size: 2rem;
+      }
+  
+      .line:hover .label_mem .mem {
+          height: 30rem;
+      }
+      .line:active .label_mem .content i {
+          transform: scale(1.3);
+          transition: 0.1s transform;
+      }
+  
+  }
+  
+  /* Desktop 1920×1080 */
+  
+  @media only screen and (min-width: 1920px) {
+      main {
+          width: 120rem;
+          height: 100vh;
+      }
+  
+      h1 {
+          font-size: 3.5rem;
+          letter-spacing: 3px;
+      }
+  
+      h6 {
+          font-size: 2.6rem;
+      }
+  
+      .label_mem .mem {
+          width: 41rem;
+          height: 0px;
+          margin-top: 10px;
+      }
+  
+      .input_mem:checked + .label_mem .mem {
+          height: 42rem;
+      }
+  
+      .box:hover .line .content i {
+          font-size: 2rem;
+      }
+  
+      .line:hover .label_mem .mem {
+          height: 42rem;
+      }
+      .line:active .label_mem .content i {
+          transform: scale(1.3);
+          transition: 0.1s transform;
+      }
+  
+  }
